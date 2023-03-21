@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-area {
+
+}
+.main-slider {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.slider-content {
+    width: 65%;
+    text-align: center;
+}
+.slider-content h4 {
+    font-size: 23px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.slider-content h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.slider-content a {
+    text-decoration: none;
+    text-align: capitalize;
+    background-color: green;
+    padding: 20px 40px;
+    position: relative;
+    color: white;
+}
+.slider-content a:hover {
+    color: white;
+}
+.slider-content a::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .6s;
+    color: white;
+}
+.slider-content a:hover::before {
+    width: 30%;
+    background-color: red;
+    color: #fff;
+    display: block;
+}
+
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+}
+.owl-nav button.owl-next {
+    right: 0;
+    left: auto;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background-color: red;
+    color: inherit;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    color: #fff;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+button.owl-dot.active {
+    background: green;
+}
+.owl-dot {
+    width: 13px;
+    height: 13px;
+    background: red;
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 50%;
+}
